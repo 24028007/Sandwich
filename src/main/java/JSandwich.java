@@ -38,9 +38,9 @@ public class JSandwich extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Main Ingredient"));
-        jPanel1.setLayout(new java.awt.GridLayout());
+        jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
-        ingredientList.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        ingredientList.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         ingredientList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Chicken", "Beef", "Veggie" };
             public int getSize() { return strings.length; }
@@ -55,7 +55,7 @@ public class JSandwich extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Bread Type"));
 
-        breadList.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        breadList.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         breadList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Rye", "White", "Sourgough" };
             public int getSize() { return strings.length; }
@@ -88,7 +88,7 @@ public class JSandwich extends javax.swing.JFrame {
             }
         });
 
-        priceLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        priceLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         priceLabel.setText("Total: R0.00");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -190,7 +190,6 @@ priceLabel.setText("Total: R" + String.format("%.2f", total));
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JLabel priceLabel;
     // End of variables declaration//GEN-END:variables
